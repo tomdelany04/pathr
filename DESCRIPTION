@@ -16,3 +16,6 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/tomdelany04/pathr
 BugReports: https://github.com/tomdelany04/pathr/issues
+Imports: 
+    rms
+RoxygenNote: 7.3.3
