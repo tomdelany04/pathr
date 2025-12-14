@@ -14,7 +14,7 @@ fit_path_model <- function(formula, data, treatment, method = "logistic") {
   newdata[[treatment]] <- 0
 
   lp_no_tx <- as.numeric(
-    rms::Predict(fit, newdata = newdata, type = "lp")[, 1]
+    predict(fit, newdata = newdata, type = "lp")
   )
 
   list(
@@ -25,4 +25,6 @@ fit_path_model <- function(formula, data, treatment, method = "logistic") {
     data = mf
   )
 }
+
+
 
